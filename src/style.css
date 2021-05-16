@@ -1,0 +1,57 @@
+body {
+    background-color: #666 !important;
+    max-height: 95vh;
+}
+
+#menu {
+    height: 100%;
+}
+
+#game-title {
+    color:#ffc107;
+    text-shadow: 2px 2px 2px black;
+    font-family: impact;
+    letter-spacing: 12px;
+    font-size: 60px;
+}
+
+.card {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.card-footer {
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: #666 !important;
+    font-size: large;
+}
+
+#control-panel {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+#control-panel p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+#control-panel p span {
+    font-weight: bold;
+    border: 1px solid #666;
+    border-radius: 2px;
+    margin-right: 5px;
+    padding: 0 4px;
+}
+
+#score-panel div p {
+    margin: 5px 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#main-canvas {
+    max-height: 90vh
+}

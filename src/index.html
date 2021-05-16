@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Assn2: Maze</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body onload="initialize()">
+    <div class="card text-center m-3">  
+        <!-- Body -->
+        <div class="row">
+
+            <!-- Menu -->
+            <div class="col-4">
+                <div id="menu" class="card text-white bg-dark">
+
+                    <!-- Header -->
+                    <h1 id="game-title">MELTDOWN</h1>
+
+                    <div class="m-3" id="score-panel">
+                        <div class="d-flex justify-content-center flex-row">
+                            <p>Local High Score:</p>
+                            <p id="high-score-display">0</p>
+                        </div>
+                        <div class="d-flex justify-content-center flex-row">
+                            <p>Score:</p>
+                            <p id="score-display">0</p>
+                        </div>
+                        <div class="d-flex justify-content-center flex-row">
+                            <p>Time:</p>
+                            <p id="time-display">0</p>
+                        </div>
+                    </div>
+
+                    <h2>New Game</h2>
+                    <div class="d-flex justify-content-center" id="new-game-panel">
+                        <button type="button" class="btn btn-warning m-2" id="5button">5 x 5</button>
+                        <button type="button" class="btn btn-warning m-2" id="10button">10 x 10</button>
+                        <button type="button" class="btn btn-warning m-2" id="15button">15 x 15</button>
+                        <button type="button" class="btn btn-warning m-2" id="20button">20 x 20</button>
+                    </div>
+
+                    <h2 class="mt-5">Controls</h2>
+                    <div class="mb-4" id="control-panel">
+                        <p>Move<span class="ml-2">&#8593;</span><span>&#8592;</span><span>&#8595;</span><span>&#8594;</span></p>
+                        <p>Move<span class="ml-2">W</span><span>A</span><span>S</span><span>D</span></p>
+                        <p>Move<span class="ml-2">I</span><span>J</span><span>K</span><span>L</span></p>
+
+                        <p class="mt-3"><span>H</span>Toggle Hint</p>
+                        <p><span>B</span>Toggle Breadcrumbs</p>
+                        <p><span>P</span>Toggle Path</p>
+                        <p><span>F</span>Toggle Flashing Sign</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Game -->
+            <div class="col">
+                <canvas id="main-canvas" width="1000" height="1000"></canvas>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer">
+            Game by Samuel Luke
+        </div>
+    </div>
+</body>
+</html>
